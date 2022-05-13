@@ -1,6 +1,7 @@
 import { Navbar } from 'react-bootstrap';
 import { Container } from 'react-bootstrap';
 import { Nav } from 'react-bootstrap';
+import CartWidget from './CartWidget/CartWidget';
 import './NavBar.css'
 
 const Navegacion = () => {
@@ -13,11 +14,10 @@ const Navegacion = () => {
           <Nav.Link href="#bebidas">Bebidas</Nav.Link>
           <Nav.Link href="#limpieza">Limpieza</Nav.Link>
         </Nav>
+        <CartWidget/>
         </Container>
       </Navbar>
     )
 }
 
 export default Navegacion
-
-
