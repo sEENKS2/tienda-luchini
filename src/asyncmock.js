@@ -1,6 +1,15 @@
 const products = [
     {
         id: '1',
+        name: 'Red Bull',
+        price: '$200',
+        category: 'bebidas',
+        img: '../../images/red-bull.jpg',
+        stock: '5',
+        description: 'Red Bull 355ml',
+    },
+    {
+        id: '2',
         name: 'Coca-Cola',
         price: '$100',
         category: 'bebidas',
@@ -9,7 +18,7 @@ const products = [
         description: 'Coca-Cola 500ml',
     },
     {
-        id: '2',
+        id: '3',
         name: 'Sprite',
         price: '$100',
         category: 'bebidas',
@@ -18,7 +27,7 @@ const products = [
         description: 'Sprite 500ml',
     },
     {
-        id: '3',
+        id: '4',
         name: 'Monster',
         price: '$230',
         category: 'bebidas',
@@ -32,6 +41,16 @@ export const getProducts = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(products)
+            console.log(products)
+        }, 2000)
+    })
+}
+
+export const getProductById = () => {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(products)
+            console.log(products)
         }, 2000)
     })
 }

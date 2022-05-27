@@ -3,11 +3,13 @@ div.polaroid {
     background-color: rgb(138, 138, 138);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+
   
   img {width: 50%}
   
   div.container {
-    text-align: center;
+    text-align: start;
     padding: 10px 20px;
 }
 
