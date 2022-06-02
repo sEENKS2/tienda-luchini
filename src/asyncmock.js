@@ -35,6 +35,15 @@ const products = [
         stock: '5',
         description: 'Monster 473cc',
     },
+    {
+        id: '5',
+        name: 'Alfajor',
+        price: '$140',
+        category: 'comida',
+        img: '../../images/alfajor.jpg',
+        stock: '5',
+        description: 'Alfajor Cofler 52gr',
+    },
 ]
 
 export const getProducts = () => {
@@ -46,11 +55,20 @@ export const getProducts = () => {
     })
 }
 
-export const getProductById = () => {
+export const getProductById = (productId) => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(products)
-            console.log(products)
+            resolve(products.find(prod => prod.id === productId))
+            console.log(productId)
         }, 2000)
+    })
+}
+
+export const getProductsByCategory = (categoryId) => {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve(products.filter(prod => prod.category === categoryId))
+            console.log(categoryId)
+        },500)
     })
 }

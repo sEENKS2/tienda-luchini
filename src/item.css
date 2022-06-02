@@ -1,26 +1,47 @@
 div.polaroid {
-    width: 20%;
-    background-color: rgb(138, 138, 138);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 25vh;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    
 }
 
-
-  
-  img {width: 50%}
+.conjunto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: flex-end;
+}
+ 
+  img {
+      width: 50%;
+    }
   
   div.container {
+    background-color: #282c34;
     text-align: start;
-    padding: 10px 20px;
+    padding: 10px;
 }
 
 .itemFuente {
     font-size: 20px !important;
 }
 
-div {
+div.asd {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
+    justify-content: space-evenly;
+    align-content: flex-end;
+}
+
+.button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
