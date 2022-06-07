@@ -5,7 +5,7 @@ const products = [
         price: '$200',
         category: 'bebidas',
         img: '../../images/red-bull.jpg',
-        stock: '5',
+        stock: '100',
         description: 'Red Bull 355ml',
     },
     {
@@ -14,7 +14,7 @@ const products = [
         price: '$100',
         category: 'bebidas',
         img: '../../images/coca-500.jpg',
-        stock: '5',
+        stock: '100',
         description: 'Coca-Cola 500ml',
     },
     {
@@ -23,7 +23,7 @@ const products = [
         price: '$100',
         category: 'bebidas',
         img: '../../images/sprite-500.jpg',
-        stock: '5',
+        stock: '100',
         description: 'Sprite 500ml',
     },
     {
@@ -32,7 +32,7 @@ const products = [
         price: '$230',
         category: 'bebidas',
         img: '../../images/monster-473.jpg',
-        stock: '5',
+        stock: '100',
         description: 'Monster 473cc',
     },
     {
@@ -41,7 +41,7 @@ const products = [
         price: '$140',
         category: 'comida',
         img: '../../images/alfajor.jpg',
-        stock: '5',
+        stock: '100',
         description: 'Alfajor Cofler 52gr',
     },
 ]
@@ -50,8 +50,7 @@ export const getProducts = () => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(products)
-            console.log(products)
-        }, 2000)
+        }, 500)
     })
 }
 
@@ -59,8 +58,7 @@ export const getProductById = (productId) => {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve(products.find(prod => prod.id === productId))
-            console.log(productId)
-        }, 2000)
+        }, 500)
     })
 }
 
@@ -68,7 +66,6 @@ export const getProductsByCategory = (categoryId) => {
     return new Promise(resolve => {
         setTimeout(() => {
             resolve(products.filter(prod => prod.category === categoryId))
-            console.log(categoryId)
         },500)
     })
 }

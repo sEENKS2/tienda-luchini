@@ -4,12 +4,12 @@ import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom"
 import { getProductsByCategory } from "../../asyncmock"
 import '../../item.css'
+import '../../App.css'
 
 const ItemListContainer = ({ greeting, handlePage }) => {
     const [products, setProducts] = useState([])
 
     const { categoryId } = useParams ()
-    console.log(categoryId)
 
     useEffect(() => {
 
@@ -27,7 +27,7 @@ const ItemListContainer = ({ greeting, handlePage }) => {
 
     return(
             <div>
-                <h1>{ greeting }</h1>
+                <h1 className="titu">{ greeting }</h1>
                 <ItemList products={products} handlePage={handlePage}/>
             </div>
 

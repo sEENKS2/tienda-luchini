@@ -1,19 +1,19 @@
 import { Navbar } from 'react-bootstrap';
 import { Container } from 'react-bootstrap';
-import { Nav } from 'react-bootstrap';
 import CartWidget from './CartWidget/CartWidget';
+import { Link } from 'react-router-dom';
+import "./NavBar.css"
 
 const Navegacion = () => {
     return (
         <Navbar bg="dark" variant="dark" fixed='top'>
+        <h1 className='alm'>Almacen La Martina</h1>
         <Container>
-        <Navbar.Brand href="/">Almacen La Martina</Navbar.Brand>
-        <Nav className="me-auto">
-          <Nav.Link href="/category/comida">Comida</Nav.Link>
-          <Nav.Link href="/category/bebidas">Bebidas</Nav.Link>
-          <Nav.Link href="/category/limpieza">Limpieza</Nav.Link>
-        </Nav>
-        <CartWidget/>
+          <Link to="/"><button className='button'>Inicio</button></Link>
+          <Link to="/category/comida"><button className='button'>Comida</button></Link>
+          <Link to="/category/bebidas"><button className='button'>Bebidas</button></Link>
+          <Link to="/category/limpieza"><button className='button'>Limpieza</button></Link>
+          <CartWidget/>
         </Container>
       </Navbar>
     )
