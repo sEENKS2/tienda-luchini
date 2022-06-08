@@ -25,7 +25,7 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
             <img src={img} alt={name}></img>
             <div className='container list'>
                 <h1 className='itemFuente list'>Item: {name}</h1>
-                <h1 className='itemFuente list'>Precio: {price}</h1>
+                <h1 className='itemFuente list'>Precio: ${price}</h1>
                 <h1 className='itemFuente list'>Desc: {description}</h1>
                 <h1 className='itemFuente list'>Categoria: {category}</h1>
                 <h1 className='itemFuente list'>Disponible: {stock}</h1>

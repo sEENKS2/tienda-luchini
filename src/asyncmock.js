@@ -2,7 +2,7 @@ const products = [
     {
         id: '1',
         name: 'Red Bull',
-        price: '$200',
+        price: 200,
         category: 'bebidas',
         img: '../../images/red-bull.jpg',
         stock: '100',
@@ -11,7 +11,7 @@ const products = [
     {
         id: '2',
         name: 'Coca-Cola',
-        price: '$100',
+        price: 100,
         category: 'bebidas',
         img: '../../images/coca-500.jpg',
         stock: '100',
@@ -20,7 +20,7 @@ const products = [
     {
         id: '3',
         name: 'Sprite',
-        price: '$100',
+        price: 100,
         category: 'bebidas',
         img: '../../images/sprite-500.jpg',
         stock: '100',
@@ -29,7 +29,7 @@ const products = [
     {
         id: '4',
         name: 'Monster',
-        price: '$230',
+        price: 230,
         category: 'bebidas',
         img: '../../images/monster-473.jpg',
         stock: '100',
@@ -38,7 +38,7 @@ const products = [
     {
         id: '5',
         name: 'Alfajor',
-        price: '$140',
+        price: 140,
         category: 'comida',
         img: '../../images/alfajor.jpg',
         stock: '100',
