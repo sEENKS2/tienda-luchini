@@ -1,13 +1,9 @@
-.titu {
-  color: black;
-}
-
 .App {
   text-align: center;
 }
 
 div.root {
-  background-color: #ffe6e6;
+  background-color: #ffffff;
 }
 
 .App-logo {
@@ -22,7 +18,7 @@ div.root {
 }
 
 .App-header {
-  background-color: #ffffff;
+  background-color: #a498cd;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

@@ -31,7 +31,7 @@ const ItemDetail = ({id, name, img, category, description, price, stock}) => {
                 <h1 className='itemFuente list'>Disponible: {stock}</h1>
             </div>
             { quantity > 0 
-            ? <Link className='container' to={'/cart'}><button className='button1'>Finalizar compra</button></Link> 
+            ? <Link className='container' to={'/cart'}><button className='button1'>Ir al carrito</button></Link> 
             : <ItemCount stock={stock} onConfirm={handleOnAdd} initial={getProduct(id)?.quantity}/>}
         </div>
 

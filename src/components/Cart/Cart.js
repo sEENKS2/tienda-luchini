@@ -19,20 +19,22 @@ const Cart = () => {
                     {cart.map(prod => {
                         return (
                             <div key={prod.id} className="container polaroid">
-                                <div className="itemFuente cart">
+                                <div className="itemFuente container cart">
                                     <div>{prod.name}</div>
                                     <div>Cantidad: {prod.quantity}</div>
                                     <div>Precio por unidad: ${prod.price}</div>
                                     <div>Subtotal: ${prod.price * prod.quantity}</div>
                                     <br />
-                                    <button className="button2" onClick={() => removeItem(prod.id)}><span>X</span></button>
+                                    <button className="button1" onClick={() => removeItem(prod.id)}><span>X</span></button>
                                 </div>
                             </div>
                         )
                     })}
+                    <br/>
                     <h1>Total: ${total}</h1>
                     <br/>
-                    <button className="button2" onClick={() => cartClear()}><span>Limpiar carrito</span></button>
+                        <Link to='/checkout'><button className="button1">Finalizar compra</button></Link>
+                        <button className="button1" onClick={() => cartClear()}>Limpiar carrito</button>
                 </div>
             </div>
         )
